@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 
 *{
     box-sizing: border-box;
@@ -6,13 +6,10 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: "sans-serif";
 }
 
-body{
-    background-color: #ffffff;
-    font-size: 14px;
-}
+
 
 .wrapper header {
     max-width: 350px;
@@ -150,9 +147,14 @@ margin-bottom: 10px;
 }
 
 
-.wrapper footer .login_link ul li{
-  display: inline-block;
+.wrapper footer .login_link ul {
+    display: flex;
+    justify-content: space-between;
     margin-right: 10px;
+
+}
+.login_link {
+    width: 60%;
 }
 
 .wrapper footer .login_link ul li a{
@@ -163,6 +165,7 @@ margin-bottom: 10px;
 .wrapper footer .login_copyright{
     color: #999;
 }
+
 
 
 
