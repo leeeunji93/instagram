@@ -1,54 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: "sans-serif";
+    font-family: 'Roboto', 'sans-serif';
 }
 
 
+header section{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
 
-.wrapper header {
+}
+
+header section .phone {
+margin-right: 30px;
+
+}
+
+header section .login_form
+ {
+    display: flex;
+    flex-direction: column;
     max-width: 350px;
     width: 100%;
-    height:auto;
-    margin: 50px auto;
-}
-
-
-.wrapper header .top,
-.wrapper header .login_signUp{
+    height: 400px;
     background-color: #fff;
     border: 1px solid #e6e6e6;
     padding: 40px 40px 20px;
+
+}
+
+header section .login_signUp{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 350px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    margin:10px 0 20px;
+    padding: 20px 40px;
+    font-size: 14px;
+    color:#262626;
+    text-align: center;
 }
 
 
-.wrapper header .login_logo img {
+
+header .login_logo img {
     display: block;
     margin: 0 auto 35px;
     width: 145px
 }
 
-.wrapper header form .login_input{
-    margin-bottom: 10px;
-}
 
-.wrapper header form input{
+header form input{
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border-radius: 3px;
     font-size: 12px;
     border:1px solid #efefef;
     background-color:#fafafa;
+    margin-bottom: 5px;
 }
-.wrapper header form .login_input input:focus{
+header form .login_input input:focus{
     border:1px solid #b2b2b2;
 }
 
 
-.wrapper header form .login_btn{
+header form .login_btn{
     background-color: #3897f0;
     border-radius: 3px;
     border:1px solid #3897f0;
@@ -56,3 +80,59 @@
     padding:3px;
     margin-top: 10px;
 }
+
+header .login_or {
+    margin-top:20px;
+}
+header .login_or p{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    color:#999;
+    font-size:12px;
+}
+
+p:before, p:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #efefef;
+    margin: auto;
+}
+
+header .login_facebook {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 10px;
+}
+
+header .login_facebook img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+header .login_facebook a {
+    font-size: 14px;
+}
+
+header .login_forgot{
+    font-size: 12px;
+    text-align: center;
+}
+
+header section .login_app p{
+    font-size: 14px;
+    text-align: center;
+}
+
+header section .login_app .login_icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+/*이미지 가운데 정렬*/
+
+
+
