@@ -75,10 +75,11 @@ header form .login_input input:focus{
 header form .login_btn{
     background-color: #3897f0;
     border-radius: 3px;
-    border:1px solid #3897f0;
+    border:1px solid #ffffff;
     text-align: center;
     padding:3px;
     margin-top: 10px;
+
 }
 
 header .login_or {
@@ -112,7 +113,7 @@ header .login_facebook img{
     margin-right: 10px;
 }
 
-header .login_facebook a {
+header .login_facebook {
     font-size: 14px;
 }
 
@@ -132,7 +133,35 @@ header section .login_app .login_icon{
     margin-top: 20px;
 
 }
-/*이미지 가운데 정렬*/
 
+
+.wrapper footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 930px;
+    margin:0 auto;
+    padding: 40px 0;
+}
+
+
+.wrapper footer .login_link ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+
+}
+.login_link {
+    width: 60%;
+}
+
+.wrapper footer .login_link ul li a{
+    font-size: 12px;
+    color: #003569;
+}
+
+.wrapper footer .login_copyright{
+    color: #999;
+}
 
 

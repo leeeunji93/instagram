@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+
+header .header_screen {
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid  #e6e6e6;
+    background: #ffffff;
+}
+
+
+
+.header_logo img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+
+.header_dig input {
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 4px;
+    border-radius: 3px;
+    border:1px solid #efefef;
+    background-color:#fafafa;
+
+}
+
+.header_icon img{
+    display: block;
+    width: 200px;
+    height: auto;
+}
+
+.feed{
+    background-color: #fafafa;
+}
+
+.feed_content{
+    margin-left: 100px;
+}
+
+.feed_1{
+    width: 600px;
+    border: 1px solid  #e6e6e6;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 auto 60px;
+
+
+
+}
+
+/* span 태그 포지션을 먹이기 위해선 부모 태그에게 relative 해줘야함*/
+.feed_1_top {
+    position: relative;
+    width:100%;
+    display: flex;
+}
+
+
+
+.feed_1_top img{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin:10px;
+
+}
+
+
+.feed_1_top a {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+}
+
+/*완벽하게 중앙에 정렬하려면 어떻게 해야하나?*/
+.feed_1_top span{
+    position: absolute;
+    right: 0;
+    top:20%;
+    margin-right: 10px;
+}
+
+
+
+
+.feed_1_pic{
+    width: 600px;
+    height: auto;
+}
+/*100%는 부모 width 값에 맞춘다는건데 왜 안될까? */
+.feed_1_picture {
+    width: 599px;
+    height: 599px;
+}
+
+.feed_1_pic .feed_1_icon{
+    width: 99%;
+}
+
+
+
+
+/*h5 b등 같은 태그를 쓸 때 별개로 해주려면 각각 클래스 네임 주는 수 밖에 없나?*/
+.feed_1_pic h5,
+.feed_1_pic .feed_1_pic_id,
+.feed_1_pic_time
+{
+    color: #262626;
+    padding-left: 5px;
+}
+
+.feed_1_pic .feed_1_pic_id{
+    padding-top: 10px;
+    color: #262626;
+    font-size: 14px;
+}
+
+.feed_1_pic span{
+    font-size: 14px;
+}
+
+
+.feed_1_pic_time{
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+
+
+.feed_1_text{
+    position: relative;
+    border-top: 1px solid #e6e6e6;
+    padding: 10px 10px 30px;
+}
+
+.feed_1_text .feed_1_comment{
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    color: #b2b2b2;
+    padding-left: 10px;
+
+}
+
+.feed_1_text .fee1d_1_comment_submit{
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #3897f0;
+    opacity: 0.6;
+}
+
+
+    /*
+    피드2
+    */
+
+
+.feed_2{
+    width: 600px;
+    border: 1px solid  #e6e6e6;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 auto 60px;
+
+
+
+}
+
+
+.feed_2_top {
+    position: relative;
+    width:100%;
+    display: flex;
+}
+
+
+
+.feed_2_top img{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin:10px;
+
+}
+
+
+.feed_2_top a {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+}
+
+
+.feed_2_top span{
+    position: absolute;
+    right: 0;
+    top:20%;
+    margin-right: 10px;
+}
+
+
+
+
+.feed_2_pic{
+    width: 600px;
+    height: auto;
+}
+/*100%는 부모 width 값에 맞춘다는건데 왜 안될까? */
+.feed_2_picture {
+    width:599px;
+    height: 599px;
+}
+
+.feed_2_pic .feed_2_icon{
+    display: block;
+    width: 99%;
+}
+
+
+
+
+
+.feed_2_pic h5,
+.feed_2_pic .feed_2_pic_id,
+.feed_2_pic_time
+{
+    color: #262626;
+    padding-left: 5px;
+}
+
+.feed_2_pic .feed_2_pic_id{
+    padding-top: 10px;
+    color: #262626;
+    font-size: 14px;
+}
+
+.feed_2_pic span{
+    font-size: 14px;
+}
+
+
+.feed_2_pic_time{
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+
+
+.feed_2_text{
+    position: relative;
+    border-top: 1px solid #e6e6e6;
+    padding: 10px 10px 30px;
+}
+
+.feed_2_text .feed_2_comment{
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    color: #999999;
+    padding-left: 10px;
+
+}
+
+.feed_2_text .fee1d_2_comment_submit{
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #3897f0;
+    opacity: 0.6;
+}
+
+
+        /*
+        story
+        */
+
+
+.feed{
+    display: flex;
+}
+
+
+
+.feed_profile{
+    display: flex;
+    margin: 40px 40px;
+}
+
+.feed_profile img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.feed_profile_name{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_name{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.profile_name small{
+    font-size: 12px;
+}
+
+.story_content{
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin-left: 40px;
+    width: 290px;
+    height: auto;
+    padding-bottom: 20px;
+
+}
+
+
+
+.story_text{
+    position: relative;
+}
+
+.story_text .story,
+.story_text .watch{
+    position: absolute;
+}
+
+.story_text .story{
+    left: 0;
+    padding: 15px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.story_text .watch{
+    right: 0;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.story_people{
+padding-top: 50px;
+}
+
+.story_people p {
+    font-size: 10px;
+    color: #b2b2b2;
+}
+.story_1{
+    display: flex;
+
+
+
+}
+
+.story_1 img{
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+
+.story_1_text{
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.story_1_text p{
+    padding-top: 3px;
+}
+
+.story_2{
+    display: flex;
+
+}
+
+.story_2 img{
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+
+.story_2_text{
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.story_2_text p{
+    padding-top: 3px;
+}
+
+
+        /*
+        recommend
+        */
+.recom_content{
+    border: 1px solid #e6e6e6;
+    width: 290px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+
+
+.recom_text{
+    position: relative;
+}
+
+.recom_text .recomtext,
+.recom_text .recomwatch{
+    position: absolute;
+}
+
+.recom_text .recomtext{
+    left: 0;
+    padding: 15px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.recom_text .recomwatch{
+    right: 0;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.recom_people{
+    position: relative;
+    padding-top: 50px;
+}
+
+.recom_people p {
+    font-size: 10px;
+    color: #b2b2b2;
+}
+.recom_1{
+    display: flex;
+}
+
+.recom_1_text{
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.recom_1_text p{
+    padding-top: 2px;
+}
+
+.recom_1 span{
+    font-size: 12px;
+    color: #3897f0;
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+    top:40%;
+}
+
+.recom_1 img{
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+
+
+
+.recom_2{
+    display: flex;
+
+}
+
+.recom_2_text{
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+.recom_2_text p{
+    padding-top: 2px;
+}
+
+.recom_2 img {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+
+.recom_2 span{
+    font-size: 12px;
+    color: #3897f0;
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.feed_link{
+    width: 80%;
+    margin-left: 40px;
+}
+
+/*흐어*/
+.feed_link ul{
+    display: flex;
+    font-size: 12px;
+
+}
+
+.feed_copyright{
+    font-size: 12px;
+    color: #999999;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
