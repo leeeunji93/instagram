@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import './Myfeed.css'
+import {Link} from "react-router-dom";
+import './Reset.css';
+import './Myfeed.css';
 import logo from '../Login/instagram.png';
 import icon from './icon.png'
 import pic_1_1 from './pic_1_1.jpg'
@@ -39,7 +41,7 @@ class MyFeed extends Component {
                                 <img src={profile} alt='profile'/>
                                 {/* <img src={forward} alt='forward'/>*/}
                                 {/*이거 눌렀을 때 프로필로 가기 만들자*/}
-                                <a href="#">molbomfilm</a>
+                                <Link to={'/Profile'}>molbomfilm</Link>
                                 <span>...</span>
                             </div>
                             <div className="feed_1_pic">
@@ -52,7 +54,7 @@ class MyFeed extends Component {
                                     src={pic_icon}
                                     alt="pic_icon"/>
                                 <h5>좋아요 1개</h5>
-                                <a href='#' className='feed_1_pic_id'>molbomfilm</a> <span>흐.</span>
+                                <Link to={'#'} className='feed_1_pic_id'>molbomfilm</Link> <span>흐.</span>
                                 <div className='feed_1_pic_time'><small>1시간전</small></div>
                                 <div className="feed_1_text">
                                     <div className="feed_1_comment">댓글 달기...</div>
@@ -68,7 +70,7 @@ class MyFeed extends Component {
                                 />
                                 {/* <img src={forward} alt='forward'/>*/}
                                 {/*이거 눌렀을 때 프로필로 가기 만들자*/}
-                                <a href="#">molbomfilm</a>
+                                <Link to={'#'}>molbomfilm</Link>
                                 <span>...</span>
                             </div>
                             <div className="feed_2_pic">
@@ -82,7 +84,7 @@ class MyFeed extends Component {
                                     src={pic_icon}
                                     alt="pic_icon"/>
                                 <h5>좋아요 1개</h5>
-                                <a href='#' className='feed_2_pic_id'>molbomfilm</a> <span>여름이</span>
+                                <Link to='#' className='feed_2_pic_id'>molbomfilm</Link> <span>여름이</span>
                                 <div className='feed_2_pic_time'><small>3시간전</small></div>
                                 <div className="feed_2_text">
                                     <div className="feed_2_comment">댓글 달기...</div>
@@ -105,10 +107,10 @@ class MyFeed extends Component {
                         <article className='story_content'>
                             <div className='story_text'>
                                 <div className='story'>
-                                <b>스토리</b>
+                                    <b>스토리</b>
                                 </div>
                                 <div className='watch'>
-                                <p >모두 보기</p>
+                                    <p>모두 보기</p>
                                 </div>
                             </div>
                             <div className='story_people'>
@@ -118,8 +120,8 @@ class MyFeed extends Component {
                                         alt='story_1'
                                     />
                                     <div className='story_1_text'>
-                                    <strong>thebatsweare</strong>
-                                    <p>20시간전</p>
+                                        <strong>thebatsweare</strong>
+                                        <p>20시간전</p>
                                     </div>
                                 </div>
 
@@ -129,8 +131,8 @@ class MyFeed extends Component {
                                         alt='story_2'
                                     />
                                     <div className='story_2_text'>
-                                    <strong>molbom</strong>
-                                    <p>10시간전</p>
+                                        <strong>molbom</strong>
+                                        <p>10시간전</p>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +143,7 @@ class MyFeed extends Component {
                                     <b>회원님을 위한 추천</b>
                                 </div>
                                 <div className='recomwatch'>
-                                    <p >모두 보기</p>
+                                    <p>모두 보기</p>
                                 </div>
                             </div>
                             <div className='recom_people'>
@@ -173,17 +175,17 @@ class MyFeed extends Component {
                         <footer>
                             <div className="feed_link">
                                 <ul>
-                                    <li><a href="#">소개·</a></li>
-                                    <li><a href="#">도움말·</a></li>
-                                    <li><a href="#">홍보센터·</a></li>
-                                    <li><a href="#">개인정보처리방침·</a></li>
-                                    <li><a href="#">API·</a></li>
-                                    <li><a href="#">채용정보·</a></li>
-                                    <li><a href="#">약관·</a></li>
-                                    <li><a href="#">위치·</a></li>
-                                    <li><a href="#">인기계정·</a></li>
-                                    <li><a href="#">해시태그·</a></li>
-                                    <li><a href="#">언어·</a></li>
+                                    <li><Link to={'#'}>소개</Link></li>
+                                    <li><Link to={'#'}>도움말</Link></li>
+                                    <li><Link to={'#'}>홍보센터</Link></li>
+                                    <li><Link to={'#'}>개인정보처리방</Link></li>
+                                    <li><Link to={'#'}>API</Link></li>
+                                    <li><Link to={'#'}>채용정보</Link></li>
+                                    <li><Link to={'#'}>약관</Link></li>
+                                    <li><Link to={'#'}>위치</Link></li>
+                                    <li><Link to={'#'}>인기계정</Link></li>
+                                    <li><Link to={'#'}>해시태그</Link></li>
+                                    <li><Link to={'#'}>언어</Link></li>
                                 </ul>
                             </div>
                             <div className="feed_copyright">

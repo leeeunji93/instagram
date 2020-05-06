@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 10px;
+}
+
+.profile_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.1rem solid  #e6e6e6;
+    background: #ffffff;
+}
+
+header .profile_logo img{
+    display: block;
+    width: 10vw;
+    height: auto;
+}
+
+.profile_input {
+    font-size: 1rem;
+    text-align: center;
+    width: 20vw;
+    padding: 0.2rem;
+    border:1px solid #efefef;
+    border-radius: 0.2rem;
+    background-color:#fafafa;
+}
+
+
+
+
+.profile_icon_profile{
+    width: 22px;
+    height: 22px;
+}
+
+.profile_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    font-size: 1.3rem;
+}
+
+.profile_icon .profile_icon_profile{
+    border-radius: 50%;
+
+}

@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
+import './Reset.css'
 import './LoginForm.css';
 import insta from './instagram.png';
 import phone from './phone-image.png';
 import appstore from './appStore.png';
 import google from './google.png';
 import facebook from './facebook.png';
+import {Link} from "react-router-dom";
 
 class LoginForm extends Component {
     state = {
-        id: 'molbomfilm',
-        password: 'abcd',
+        id: '',
+        password:'',
     };
 
     handleChange = e => {
@@ -18,19 +20,23 @@ class LoginForm extends Component {
         })
     };
 
-    handelClcik = () => {
-       /* const {id,password} = this.state;
+
+    handleClick = () => {
+        const {id,password} = this.state;
         if(id === 'molbomfilm'){
-            if(password === 'abcd'){
-                alert('로그인 하셨습니다')
+            if(password === '1234'){
+                 this.props.history.push('/MyFeed');
             }
             else{
-                alert('비밀번호가 틀렸습니다')
+                alert('비밀번호가 틀렸습니다');
+                this.props.history.push('/');
+
             }
         }
-        else{
-            alert('아이디가 일치하지 않습니다')
-        }*/
+        else {
+            alert('아이디가 일치하지 않습니다');
+            this.props.history.push('/');
+        }
     }
 
 
@@ -53,6 +59,7 @@ class LoginForm extends Component {
                                     name="id"
                                     type="text"
                                     placeholder="Phone number,username, or email"
+                                    value={this.state.id}
                                     onChange={this.handleChange}
 
                                 />
@@ -60,12 +67,26 @@ class LoginForm extends Component {
                                     name="password"
                                     type="password"
                                     placeholder="Password"
+                                    value={this.state.password}
                                     onChange={this.handleChange}
 
                                 />
 
                                 <div className="login_btn">
-                                    <button onClick={this.handelClcik}>로그인</button>
+                                   {/*
+                                   이건 그냥 다 넘어감. a태그 같은거
+                                    <Link
+                                        to={'/MyFeed'}
+                                        onClick={this.handelClick}
+                                        >로그인
+                                </Link>
+                                */}
+
+                                {/*
+                                <button onClick={()=>{history.push('/MyFeed')}}>
+
+                                */}
+                               <button onClick={this.handleClick}>로그인</button>
                                 </div>
 
                             </form>
@@ -74,17 +95,17 @@ class LoginForm extends Component {
                             </div>
                             <div className="login_facebook">
                                 <img src={facebook} alt='facebook'/>
-                                <a href='#'> Facebook으로 로그인
-                                </a>
+                                <Link to={'#'}> Facebook으로 로그인</Link>
+
                             </div>
                             <div className="login_forgot">
-                                <a href='#' onClick={this.handleClick}> 비밀번호를 잊으셨나요?
-                                </a>
+                                <Link to={'#'}> 비밀번호를 잊으셨나요?
+                                </Link>
                             </div>
                         </div>
                         <div className="login_signUp">
                             <p>계정이 없으신가요?</p>
-                          <a href="#">가입하기</a>
+                          <Link to={'#'}>가입하기</Link>
                         </div>
                         <div className="login_app">
                             <p>앱을 다운로드 하세요</p>
@@ -99,17 +120,17 @@ class LoginForm extends Component {
                 <footer>
                 <div className="login_link">
                     <ul>
-                        <li><a href="#">소개</a></li>
-                        <li><a href="#">도움말</a></li>
-                        <li><a href="#">홍보센터</a></li>
-                        <li><a href="#">개인정보처리방</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">채용정보</a></li>
-                        <li><a href="#">약관</a></li>
-                        <li><a href="#">위치</a></li>
-                        <li><a href="#">인기계정</a></li>
-                        <li><a href="#">해시태그</a></li>
-                        <li><a href="#">언어</a></li>
+                        <li><Link to={'#'}>소개</Link></li>
+                        <li><Link to={'#'}>도움말</Link></li>
+                        <li><Link to={'#'}>홍보센터</Link></li>
+                        <li><Link to={'#'}>개인정보처리방</Link></li>
+                        <li><Link to={'#'}>API</Link></li>
+                        <li><Link to={'#'}>채용정보</Link></li>
+                        <li><Link to={'#'}>약관</Link></li>
+                        <li><Link to={'#'}>위치</Link></li>
+                        <li><Link to={'#'}>인기계정</Link></li>
+                        <li><Link to={'#'}>해시태그</Link></li>
+                        <li><Link to={'#'}>언어</Link></li>
                     </ul>
                 </div>
                 <div className="login_copyright">
@@ -124,3 +145,7 @@ class LoginForm extends Component {
 }
 
 export default LoginForm;
+
+
+
+
