@@ -53,7 +53,7 @@ class MyFeed extends Component {
                                     className='feed_1_icon'
                                     src={pic_icon}
                                     alt="pic_icon"/>
-                                <h5>좋아요 1개</h5>
+                                <p>좋아요 1개</p>
                                 <Link to={'#'} className='feed_1_pic_id'>molbomfilm</Link> <span>흐.</span>
                                 <div className='feed_1_pic_time'><small>1시간전</small></div>
                                 <div className="feed_1_text">
@@ -83,7 +83,7 @@ class MyFeed extends Component {
                                     className='feed_2_icon'
                                     src={pic_icon}
                                     alt="pic_icon"/>
-                                <h5>좋아요 1개</h5>
+                                <p>좋아요 1개</p>
                                 <Link to='#' className='feed_2_pic_id'>molbomfilm</Link> <span>여름이</span>
                                 <div className='feed_2_pic_time'><small>3시간전</small></div>
                                 <div className="feed_2_text">
@@ -175,17 +175,17 @@ class MyFeed extends Component {
                         <footer>
                             <div className="feed_link">
                                 <ul>
-                                    <li><Link to={'#'}>소개</Link></li>
-                                    <li><Link to={'#'}>도움말</Link></li>
-                                    <li><Link to={'#'}>홍보센터</Link></li>
-                                    <li><Link to={'#'}>개인정보처리방</Link></li>
-                                    <li><Link to={'#'}>API</Link></li>
-                                    <li><Link to={'#'}>채용정보</Link></li>
-                                    <li><Link to={'#'}>약관</Link></li>
-                                    <li><Link to={'#'}>위치</Link></li>
-                                    <li><Link to={'#'}>인기계정</Link></li>
-                                    <li><Link to={'#'}>해시태그</Link></li>
-                                    <li><Link to={'#'}>언어</Link></li>
+                                    <li>소개 ·</li>
+                                    <li>도움말 ·</li>
+                                    <li>홍보센터 ·</li>
+                                    <li>개인 정보 처리 방식 ·</li>
+                                    <li>API</li>
+                                    <li>채용 정보 ·</li>
+                                    <li>약관 ·</li>
+                                    <li>위치 ·</li>
+                                    <li>인기 계정 ·</li>
+                                    <li>해시태그 ·</li>
+                                    <li>언어</li>
                                 </ul>
                             </div>
                             <div className="feed_copyright">

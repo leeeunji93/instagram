@@ -1,11 +1,21 @@
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Lato', 'Noto Sans KR';
     font-size: 10px;
+}
+
+/*여기서 10rem은 *10한  100px 1vh */
+
+
+
+.wrapper{
+    background-color: #fafafa;
 }
 
 .profile_header {
@@ -27,17 +37,16 @@ header .profile_logo img{
     text-align: center;
     width: 20vw;
     padding: 0.2rem;
-    border:1px solid #efefef;
+    border:0.1rem solid #efefef;
     border-radius: 0.2rem;
     background-color:#fafafa;
 }
 
 
 
-
 .profile_icon_profile{
-    width: 22px;
-    height: 22px;
+    width: 1.7rem;
+    height: 1.7rem;
 }
 
 .profile_icon {
@@ -52,3 +61,199 @@ header .profile_logo img{
     border-radius: 50%;
 
 }
+
+        /*section*/
+
+.section_all{
+    width: 1000px;
+    padding: 40px 20px ;
+    margin:0 130px;
+
+}
+
+
+.section_top{
+    display: flex;
+    align-items: center;
+    max-width: 80rem;
+    height:auto;
+}
+
+.section_top_profile{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin-right: 10rem;
+    margin-left: 5rem;
+
+}
+
+.section_top_info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.section_top_info_1{
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.section_top_info_1 p{
+    font-size: 1.8rem;
+    margin-right: 1.2rem;
+}
+
+.section_top_info_1 button{
+    border:0.1rem solid #efefef;
+    border-radius: 0.2rem;
+    background-color:#ffffff;
+    font-size: 1rem;
+    color: #262626;
+    padding: 0.2rem;
+    margin: 0 1.2rem 0 0;
+
+}
+
+.profile_icon_cog {
+    font-size: 1.2rem;
+}
+
+.section_top_info_2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 40px;
+    font-size: 1rem;
+
+}
+
+.section_top_info_2 b{
+    font-weight: bold;
+
+}
+
+ .section_top_info_3 {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .section_top_info_3 p {
+     font-size: 1rem;
+     font-weight: bold;
+ }
+
+.section_top_info_3 span {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/*Rink 태그는 왜 css안먹는거지?*/
+.section_top_info_3 a {
+    margin-top: 0.5rem;
+}
+
+.section_second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1rem solid #e6e6e6;
+    margin-top: 5rem;
+}
+
+.section_second_1th,
+.section_second_2nd,
+.section_second_3rd,
+.section_second_4th{
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    color: #999999;
+}
+
+.section_second_1th span:hover,
+.section_second_2nd span:hover,
+.section_second_3rd span:hover,
+.section_second_4th span:hover {
+   color: #262626;
+
+}
+
+
+        /*picture*/
+
+.section_third{
+    margin-top: 30px;
+}
+
+.section_second_1th_icon,
+.section_second_2nd_icon,
+.section_second_3rd_icon,
+.section_second_4th_icon{
+    margin-right: 5px;
+}
+
+.section_second_1th span,
+.section_second_2nd span,
+.section_second_3rd span,
+.section_second_4th span{
+    margin-right: 15px;
+    font-size: 12px
+}
+
+
+.pic_all{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+
+/*pic_all img 로 하면 왜 안먹힐까? 다 클래스 네임 만들어줘야함?*/
+
+
+.pic_1 img,
+.pic_2 img,
+.pic_3 img,
+.pic_4 img,
+.pic_5 img,
+.pic_6 img {
+    display: block;
+    width: 300px;
+    height: 300px;
+
+}
+
+.pic_1{
+    position:relative;
+}
+
+.pic_1_icon_heart {
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.pic_1_overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+
+}
+
+.pic_1:hover .pic_1_overlay{
+    opacity: 1;
+}
+
+

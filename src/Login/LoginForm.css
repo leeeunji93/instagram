@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 *{
     box-sizing: border-box;
@@ -6,7 +5,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Lato', 'Noto Sans KR';
 }
 
 
@@ -72,13 +71,18 @@ header form .login_input input:focus{
 }
 
 
-header form .login_btn{
+header form .login_btn button{
+    text-align: center;
     background-color: #3897f0;
     border-radius: 3px;
     border:1px solid #ffffff;
-    text-align: center;
     padding:3px;
-    margin-top: 10px;
+    /*로그인을 마진 말고 가운데 정렬할 방법은 없나?*/
+    margin: 10px 0 0 85px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
 
 }
 
@@ -135,33 +139,38 @@ header section .login_app .login_icon{
 }
 
 
-.wrapper footer{
+.footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    max-width: 930px;
-    margin:0 auto;
-    padding: 40px 0;
+    margin-bottom: 40px;
 }
 
 
-.wrapper footer .login_link ul {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 10px;
-
-}
 .login_link {
-    width: 80%;
+ width: 40%;
 }
 
-.wrapper footer .login_link ul li a{
+
+.login_link ul {
+    display: flex;
+    justify-content: space-around;
     font-size: 12px;
-    color: #003569;
+    list-style: none;
+    color: darkblue;
+    font-weight: bold;
+    margin-left: 50px;
 }
 
-.wrapper footer .login_copyright{
-    color: #999;
+
+
+.login_copyright{
+    color: #999999;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 50px;
+
 }
+
 
 
